@@ -1,0 +1,566 @@
+#{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box; 
+    
+} 
+:root{
+    --color1:#fefefa;
+    --color2:#fff;
+    --color3:#50c878;
+    --color4:#7cfc00;
+    --color5:#1434A4;
+    --color6:#ADD8E6;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:var(--color2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;   
+   
+}
+header{
+     width: 95%;
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    
+}
+header aside, article{
+    width:85%;
+    height:99%;
+    
+    border-radius: 10px;
+    background: #fff;
+
+}
+header aside{
+    width: 15%;
+    height:98%;
+    border-radius: 10px;
+   
+    padding-left: 8px;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
+header aside .general{
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+  
+ 
+}
+header aside .general::-webkit-scrollbar-button{
+    width: 5px;
+    background-color: var(--color5);
+ 
+
+}
+header aside .general::-webkit-scrollbar-button-thumb{
+    background-color:var(--color6);
+    border-radius: 10px;
+    visibility: hidden;
+}
+header aside .general .pro{
+    width:90%;
+    height: 15%;
+    border-radius: 15px;
+    background-color: #e0e1e4;
+    padding: 3px 3px 5px 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+header aside .general .pro .cont1{
+    width: 20%;
+    height: 30%;
+   
+   margin-top: 30px;
+  
+}
+header aside .general .pro .cont1 a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+}
+
+header aside .general .pro .cont2{
+    width: 70%;
+    
+    padding-left: 20px;
+    border-radius: 7px;
+}
+header aside .general .pro .cont2 h1{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+header aside .general .pro .cont2 p{
+    color:black;
+    font-size: 15px;
+    text-transform:uppercase;
+    position: relative;
+    bottom: 8px;
+    right: 10px;
+  
+}
+header aside .general .gen{
+    height:50%;
+    width: 90%;
+    margin-top:30px;
+    padding-left: 3px; 
+    padding-right: 10px;  
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  border-radius: 5px;
+}
+header aside .general .gen h1{
+    font-size: 20px;
+}
+header aside .general .gen .gen-col{
+    width:99%;
+    height: 10%;
+    border-radius: 8px;
+    padding-left:10px;
+    display: flex;  
+    margin-left: 3px;
+    background-color: #fff;
+    
+   
+}
+
+header aside .general .gen .gen-col a {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+header aside .general .gen .gen-col:hover{
+    background-color: #e0e1e4;
+}
+header aside .general .gen .gen-col a:hover{
+    color: var(--color5);
+}
+header aside .general .gen .gen-col a p{
+    margin-left: 25px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    
+}
+header aside .general .gen .gen-col a i{
+    font-size: 22px;
+    position: relative;
+    top:2px;
+     bottom: 5px;
+}
+header aside .general .gen2{
+    height:50%;
+    width: 90%;
+   
+    margin-top:30px;
+    padding-left: 3px; 
+    padding-right: 10px;  
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+header aside .general .gen2 h1{
+    position: static;
+}
+header aside .general .gen2 .gen-col2{
+    width: 99%;
+    height:15%;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 5px;
+  
+}
+header aside .general .gen2 .gen-col2:hover{
+    background-color: #e0e1e4;
+    color: var(--color5);
+}
+header aside .general .gen2 .gen-col2 a{
+    text-decoration: none;
+    color: black;
+}
+header aside .general .gen2 .gen-col2 a i{
+    font-size: 22px;
+    position: relative;
+    top:16px;
+    font-weight: bolder;
+       
+}
+header aside .general .gen2 .gen-col2 a p{
+    position: relative;
+    bottom: 20px;
+    left: 28px;
+    font-weight: bold;
+}
+header aside .general .gen2 .gen-col2 a:hover{
+    color: var(--color5);
+    background-color: #e0e1e4;
+}
+header article .total{
+    width: 100%;
+    height:89%;
+    background-color: white;
+    overflow-x: auto;
+}
+header article .total::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e0e1e4;
+}
+
+header article .total::-webkit-scrollbar-thumb{
+   background-color:var(--color5) ; 
+   border-radius: 10px; 
+}
+
+header article .back{
+    background-color: var(--color6);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 70%;
+    height: 30%;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+header article .navbar{
+    width: 100%;
+    height: 10%;
+    background-color:var(--color6);
+    display: flex;
+    border-radius: 10px;
+   
+}
+header article .navbar .nav{
+position: absolute;
+right: 100px;
+top: 20px;
+display: flex;
+gap: 20px;
+}
+header article .navbar .nav a i{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    background-color:#e0e1e4;
+    border-radius: 50%;
+  
+}
+header article .navbar .nav a i:hover{
+    background-color: #e0e1e4;
+    font-size: 40px;
+}
+header article .back button{
+    width: 30%;
+    height: 15%;
+    background-color: var(--color5);
+    border-radius: 10px;
+}
+header article .back button:hover{
+    background-color:  rgb(2, 2, 80);
+    color: white;
+}
+header article .bank{
+    width:90%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 20px;
+    overflow-y: auto;
+    margin-top: 5px;
+  
+   
+}
+
+header article .bank .banks{
+    width:30%;
+    height: 80%;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+header article .bank .banks a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+header article .bank .banks a:hover{
+    color: var(--color5);
+    width: 20px;
+    font-size: 20px;
+    transition: .2s linear;
+   
+}
+header article .bank .banks a i{
+    font-size: 15px;
+    margin-right: 10px;
+}
+header article .total .info{
+    width: 60%;
+    height: 30%;
+   
+    box-shadow: 0px 0px 10px rgb(20, 19, 19) ;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+header article .total .info p{
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+header article .total .info p i{
+    color: var(--color5);
+}
+header article .total .balances{
+    width: 95%;
+    height: 20%;
+  
+    margin: 20px 5px 10px 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+header article .total .balances .bal{
+    width: 30%;
+    height: 90%;
+  background-color: #EDEADE;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+header article .total .balances .bal p{
+    font-size: 20px;
+    font-weight:800;
+    margin-bottom: 3px;
+}
+header article .total .img{
+    width:88%;
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+   
+}
+header article .total .img .img-col{
+    width:20%;
+    height: 30%;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #e0e1e4;
+}
+header article .total .img .img-col a i{
+    font-size: 150px;
+    color: #1434A4;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+header article .total .img .img-col p{
+    font-size: 20px;
+    position: relative;
+    bottom: 18px;
+    left: 15px;
+    font-weight: bold;
+}
+header article .total .img .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:var(--color6);
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+    align-items: center;
+}
+header article .total .img .icon a i{
+    color: green;
+    font-size: 40px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+
+}
+header article .form {
+    width:85%;
+    height: 85vh;
+    border: 1px solid black;
+   position: relative;
+   top: 80px;
+   left: 40px;
+   border-radius: 20px;
+   overflow-x: auto;
+   box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+   align-items: center;
+   justify-content: center;
+   padding-right: 20px;
+   padding-left: 60px;
+   padding-top: 20px;
+   display: block;
+   
+}
+header article .form .radio select{
+    width: 90%;
+    height: 50px;
+    align-content: center;
+    border-radius: 20px;
+    margin-top: 55px;
+    border: 2px solid blue;
+}
+header article .form .radio select:hover{
+    border: 2px solid blue;
+}
+header article .form .radio select option{
+  color: blue;
+  font-size: 20px;
+}
+header article .form .text input{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 55px;
+    font-size: 20px;
+    border: 2px solid blue;
+}
+header article .form .text input:hover{
+    border: 2px solid blue;
+}
+header article .form .sub button{
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 55px;
+    font-size: 20px;
+   background-color:  blue;
+   color: white;
+  margin-left: 190px;
+}
+header article .form .sub button:hover{
+    color: black;
+    background-color: var(--color6);
+}
+header article .form .radio input{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 55px;
+    font-size: 20px;
+    border: 2px solid blue;
+}
+header article .total h1{
+    font-size: 20px;
+    margin-left:50px;
+}
+header article .total .info2{
+    width: 60%;
+    height: 50%;
+    box-shadow: 0px 0px 10px rgb(20, 19, 19) ;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+header article .total .info2 .p1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+header article .profile{
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px 5px 50px;
+}
+header article .profile{
+    width: 25%;
+    height: 35%;
+    border-radius: 50%;
+    align-content: center;
+    border: 1px solid black;
+    position: relative;
+    left: 30%;
+    top: 20px;
+   background-color: black;
+
+}
+header article .profile .inside{
+    width: 95%;
+    height: 95%;
+    border-radius: 60%;
+    background-color: var(--color2);
+    margin: auto;
+    position: relative;
+    top: 7px;
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header article .profile .inside img{
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+}
+header article .profile .inside  a i{
+    position: relative;
+    bottom:50px;
+    left: 73%;
+    font-size: 40px;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 60%;
+    color:black;
+
+
+  
+}
+bottom-bar{
+    position: absolute;
+    background-color:black;
+    width: 100%;
+    bottom: 10px;
+}
+
+
+ @media(width>700px){
+   
+ }
